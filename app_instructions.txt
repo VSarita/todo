@@ -1,0 +1,41 @@
+Both frontend and backend are in this folder
+
+Backend details:
+To start backend api:
+--> Run run.py file
+
+To Start frontend:
+--> Navigate to todo/application --> npm start
+
+Prerequisites for backends:
+The packages required to run the backend are listed in requirement.txt file
+
+Project format:
+1. db.py contains all db related queries
+2. settings.py: contain db link
+3. routes.py: contain all api end points
+4. api folder:
+    4.1. tasks.py: has all tasks related code
+    4.2. bucket.py: has bucket related code
+5. application folder:
+    5.1. src/actions: has all actionCreator functions
+    5.2. src/Components: app UI Code
+    5.3. src/reducer: reducers
+    5.4. src/store: Redux Middleware configuration
+
+
+
+
+Database setup:
+One Database is required. Database name: todo
+todo database has two collections: tasks, buckets
+columns of tasks collection:
+1. _id
+2. title
+3. description
+4. bucket_id(_id of bucket from bucket collection)
+5. is_completed
+
+columns of buckets collection:
+1. _id
+2. name
